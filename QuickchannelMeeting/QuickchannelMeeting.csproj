@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>a676b6d8-30c8-43dd-936a-4f23f1fda18a</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\Jonas\.nuget\packages\linq2db.postgresql\5.1.0\contentFiles\any\any\LinqToDB.Templates\CopyMe.PostgreSQL.tt.txt" />
+    <None Remove="C:\Users\Jonas\.nuget\packages\linq2db.postgresql\5.1.0\contentFiles\any\any\LinqToDB.Templates\DataAnnotations.ttinclude" />
+    <None Remove="C:\Users\Jonas\.nuget\packages\linq2db.postgresql\5.1.0\contentFiles\any\any\LinqToDB.Templates\DataModel.ttinclude" />
+    <None Remove="C:\Users\Jonas\.nuget\packages\linq2db.postgresql\5.1.0\contentFiles\any\any\LinqToDB.Templates\EditableObject.ttinclude" />
+    <None Remove="C:\Users\Jonas\.nuget\packages\linq2db.postgresql\5.1.0\contentFiles\any\any\LinqToDB.Templates\Equatable.ttinclude" />
+    <None Remove="C:\Users\Jonas\.nuget\packages\linq2db.postgresql\5.1.0\contentFiles\any\any\LinqToDB.Templates\Humanizer.ttinclude" />
+    <None Remove="C:\Users\Jonas\.nuget\packages\linq2db.postgresql\5.1.0\contentFiles\any\any\LinqToDB.Templates\LinqToDB.PostgreSQL.Tools.ttinclude" />
+    <None Remove="C:\Users\Jonas\.nuget\packages\linq2db.postgresql\5.1.0\contentFiles\any\any\LinqToDB.Templates\LinqToDB.PostgreSQL.ttinclude" />
+    <None Remove="C:\Users\Jonas\.nuget\packages\linq2db.postgresql\5.1.0\contentFiles\any\any\LinqToDB.Templates\LinqToDB.Tools.ttinclude" />
+    <None Remove="C:\Users\Jonas\.nuget\packages\linq2db.postgresql\5.1.0\contentFiles\any\any\LinqToDB.Templates\LinqToDB.ttinclude" />
+    <None Remove="C:\Users\Jonas\.nuget\packages\linq2db.postgresql\5.1.0\contentFiles\any\any\LinqToDB.Templates\MultipleFiles.ttinclude" />
+    <None Remove="C:\Users\Jonas\.nuget\packages\linq2db.postgresql\5.1.0\contentFiles\any\any\LinqToDB.Templates\NotifyDataErrorInfo.ttinclude" />
+    <None Remove="C:\Users\Jonas\.nuget\packages\linq2db.postgresql\5.1.0\contentFiles\any\any\LinqToDB.Templates\NotifyPropertyChanged.ttinclude" />
+    <None Remove="C:\Users\Jonas\.nuget\packages\linq2db.postgresql\5.1.0\contentFiles\any\any\LinqToDB.Templates\ObsoleteAttributes.ttinclude" />
+    <None Remove="C:\Users\Jonas\.nuget\packages\linq2db.postgresql\5.1.0\contentFiles\any\any\LinqToDB.Templates\PluralizationService.ttinclude" />
+    <None Remove="C:\Users\Jonas\.nuget\packages\linq2db.postgresql\5.1.0\contentFiles\any\any\LinqToDB.Templates\T4Model.ttinclude" />
+    <None Remove="C:\Users\Jonas\.nuget\packages\linq2db.postgresql\5.1.0\contentFiles\any\any\LinqToDB.Templates\Validation.ttinclude" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Common" Version="7.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.4" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.14.0" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+</Project>
