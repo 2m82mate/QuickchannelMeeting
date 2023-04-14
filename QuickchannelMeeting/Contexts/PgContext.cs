@@ -98,7 +98,7 @@ namespace QuickchannelMeeting.Contexts
                 new Transition
                 {
                     Id = 1,
-                    FromStateId = (int)MeetingState.NotStarted,
+                    FromStateId = (int)MeetingState.Preperation,
                     ToStateId = (int)MeetingState.Idle,
                     TriggerId = (int)MeetingTrigger.StartMeeting
                 }
@@ -127,7 +127,7 @@ namespace QuickchannelMeeting.Contexts
             var agendaPointId2 = Guid.NewGuid();
 
             modelBuilder.Entity<Meeting>().HasData(
-               new Meeting { Id = meetingId, Title = "City Council Meeting", Description = "Regular city council meeting to discuss various topics.", StateId = (int)MeetingState.NotStarted}
+               new Meeting { Id = meetingId, Title = "City Council Meeting", Description = "Regular city council meeting to discuss various topics.", StateId = (int)MeetingState.Preperation}
            );
             modelBuilder.Entity<AgendaPoint>().HasData(
                 new AgendaPoint { Id = agendaPointId1, Title = "Agenda Point 1", Description = "Discuss the budget for the upcoming year.", MeetingId = meetingId, Position = 1 },

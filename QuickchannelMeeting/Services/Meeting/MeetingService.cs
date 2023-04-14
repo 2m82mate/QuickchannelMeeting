@@ -10,5 +10,15 @@ namespace QuickchannelMeeting.Services
         {
             _meetings = meetings;
         }
+
+        public async Task<Meeting> StartMeeting(Guid meetingId)
+        {
+            var meeting = await _meetings.GetMeeting(meetingId);
+            
+            meeting.StateId = (int)MeetingState.Started;
+            await _meetings.UpdateMeeting(meeting);
+            return meeting;
+        }
+
     }
 }

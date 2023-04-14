@@ -11,6 +11,7 @@ namespace QuickchannelMeeting.Models.DbModels
         public string Description { get; internal set; }
         public int StateId { get; set; }
         public State State { get; set; }
+        public MeetingSettings Settings { get; set; }
         public ICollection<AgendaPoint> AgendaPoints { get; set; }
         public ICollection<Participant> Participants { get; set; }
     }
